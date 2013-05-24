@@ -1,0 +1,17 @@
+{
+    "name": "vendor_name/package_name",
+    "description": "description_text",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "author's name",
+            "email": "email@example.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "2.2.0",
+        "twig/twig": "1.6.5",
+        "twig/extensions": "1.0.x-dev",
+        "gabordemooij/redbean": "v3.4.4"
+    }
+}
