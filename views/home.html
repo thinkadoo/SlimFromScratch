@@ -1,5 +1,20 @@
 {% include 'header.html' %}
 
+<div class="masthead">
+    <h3 class="muted">thinkadoo</h3>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <ul class="nav">
+                    {% for item in navigation %}
+                    <li class="{{item.class}}"><a href="{{ item.href }}">{{ item.caption }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div><!-- /.navbar -->
+</div>
+
 <!-- Jumbotron -->
 <div class="jumbotron">
     <h1>Slim</h1>

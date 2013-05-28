@@ -23,6 +23,7 @@ function loadTwig(){
 
 $twig = loadTwig();
 
+
 // DATABASE //
 
 require_once 'vendor/gabordemooij/redbean/Redbean/redbean.inc.php';
@@ -111,3 +112,26 @@ $app->get('/contact', function() use ($twig){
 
 
 $app->run();
+
+
+
+
+
+
+/*$url = $app->request()->getUrl();
+$URI = $app->request()->getRootUri();
+$path = $app->request()->getPathInfo();
+
+echo "<pre>";
+print_r($url);
+print_r($URI);
+print_r($path);
+die();
+
+$data = $app->environment()->getInstance(true)->getIterator()->getArrayCopy();
+echo "<pre>";
+print_r($data);
+print_r($data['SERVER_NAME']);
+print_r($data['SCRIPT_NAME']);
+print_r($data['REMOTE_ADDR']);
+die();*/
